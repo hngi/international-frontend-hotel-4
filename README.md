@@ -8,7 +8,6 @@ Sub components and assignees
 --
 Navbar component and Slider => @6lackHat
 --
-Slider component => @Teedari
 -
 Facility-gallery component - @Tivus and @Teedari
 -
