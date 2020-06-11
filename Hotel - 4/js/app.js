@@ -1,4 +1,8 @@
-
+const hum = document.getElementById('humberger');
+hum.addEventListener('click',function(e){
+const xmMenu = document.getElementById('xmMenu');
+  xmMenu.classList.toggle('hide');
+});
 
 class GalleryShow {
   constructor(_title, _img){
@@ -23,6 +27,9 @@ const genImageString = () => {
 const displayGallerys = (arr) => {
 
     const facilityGallery = document.querySelector('#facilityGallery');
+    if(facilityGallery == null){
+      return
+    }
     let html = '';
     arr.forEach(str => {
 
@@ -38,6 +45,7 @@ const displayGallerys = (arr) => {
 
     });
     //call to display on html
+
     facilityGallery.innerHTML  = html;
 
 }
