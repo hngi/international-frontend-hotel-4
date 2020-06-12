@@ -18,4 +18,5 @@ Footer component => @Teedari
 -
 Contact form component => @James
 -
-
+Hotel Design => @Wonder
+-
