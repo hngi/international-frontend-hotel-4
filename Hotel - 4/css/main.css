@@ -13,9 +13,11 @@
   display: flex;
   padding: 2rem 0;
 }
+
 .group-buttons {
   padding: 0;
 }
+
 .just-btn {
   /* display: inline-block; */
   padding: 0.65rem 2rem;
@@ -60,6 +62,7 @@
   top: 70%;
   width: 100%;
 }
+
 .rooms__body::after {
   content: "";
   position: absolute;
@@ -69,6 +72,7 @@
   left: 0;
   background-color: rgba(0, 217, 255, 0.205);
 }
+
 .rooms__body::before {
   content: "";
   position: absolute;
@@ -79,17 +83,21 @@
   background-color: rgba(25, 28, 29, 0.329);
   z-index: -1;
 }
+
 .rooms__title {
   font-size: 1rem;
 }
+
 .rooms__title2 {
   color: white;
   font-size: 1rem;
   padding-left: 0.5rem;
 }
+
 .rooms__text {
   font-size: 0.7rem;
 }
+
 .rooms__button {
   padding: 0 1rem;
   border: none;
@@ -124,33 +132,42 @@
     flex-flow: column;
     /* align-items: flex-start; */
   }
+
   .rooms__body > .row {
     flex-flow: row;
   }
+
   .row > .rooms__title2 {
     display: none;
   }
+
   .row > .rooms__button {
     padding: 1rem 2rem;
     margin: auto;
   }
+
   .xm-hide {
     display: none;
   }
+
   .lg-hide {
     display: block;
   }
+
   .footer__label {
     display: none;
   }
+
   .footer__logo {
     width: 50%;
   }
+
   .col-4,
   .col-2 {
     width: 100%;
     text-align: center;
   }
+
   .social-handles {
     justify-content: center;
     flex-flow: row;
@@ -163,285 +180,171 @@
     padding: 0;
     margin: 0;
   }
+
   .search__input {
     width: 100%;
     margin-bottom: 1rem;
   }
+
   .group-buttons {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
   }
+
   .just-btn {
     width: 50%;
     margin-bottom: 1rem;
   }
+
   .just-btn:not(:first-child) {
     margin-bottom: 1rem;
   }
 }
 
-/* nav and home */
-/*Home - Section */
-* a {
-  text-decoration: none;
-}
-* li {
-  list-style: none;
-}
-.hero-section {
-  width: 100%;
-  background: url(../assets/images/SliderImages/Image2.png);
-  background-repeat: no-repeat;
-  overflow: hidden;
-  bottom: 0;
-  background-position: center;
-  background-size: cover;
-  font-size: 16px;
-  height: 100%;
-  padding-bottom: 10rem;
-  backface-visibility: hidden;
-  animation: sliderBack 10000ms ease-in-out infinite 200ms;
-}
-
-@keyframes sliderBack {
-  0% {
-    background: url(../assets/images/SliderImages/Image2.png);
-  }
-  50% {
-    background: url(../assets/images/SliderImages/Image4.png);
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken;
-  }
-  75% {
-    background: url(../assets/images/SliderImages/Image3.png);
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: darken;
-  }
-  100% {
-    background: url(../assets/images/SliderImages/Image1.png);
-  }
-}
-
-.bg-teal {
-  background-color: rgb(0, 217, 255);
-}
-
-.hum-nav {
-  text-align: center;
-  overflow: hidden;
-}
-
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-.hum-nav li {
-  margin-right: 3rem;
-  transition: 200ms;
-  animation: moveUp 500ms;
-}
-
-@keyframes moveUp {
-  from {
-    transform: translateY(-20rem);
-  }
-}
-.hum-nav li a {
-  color: white;
-}
-
-nav {
-  margin-top: 40px;
-  padding: 20px;
-}
-nav ul {
+/*Contact-Form Styling*/
+.flex-container {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 400;
+  justify-content: space-around;
 }
 
-nav ul:hover {
-  color: rgb(0, 217, 255);
-}
-
-nav ul li {
-  margin-left: 10px;
-  line-height: 2em;
-  vertical-align: middle;
-}
-nav ul .nav-item3 {
-  margin-top: -30px;
-}
-nav ul li a {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 2em;
-}
-
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  justify-content: space-evenly;
-  width: 50%;
-  margin-left: 6vw;
-  color: #fff;
-}
-.hero-text .p1 {
-  font-size: 45px;
-  text-transform: uppercase;
-}
-.hero-text .p2 {
-  font-size: 20px;
-}
-.hero-text form input {
-  padding: 10px;
-  font-size: 17px;
-  border: none;
-}
-.hero-text form button {
-  padding: 10px 10px;
-  margin-left: -4px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-.hero-text form button:hover {
-  background-color: lightslategray;
-}
-.btns {
+.form {
+  background-color: white;
+  width: 48%;
   margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
-.btns button {
-  padding: 10px 10px;
-  border-radius: 2px;
-  border: 0;
-  margin-right: 15px;
+
+.image {
+  background-color: white;
+  width: 48%;
+}
+
+input[type="submit"] {
+  background-color: rgb(37, 236, 236);
+  display: inline-block;
+  border: none;
   cursor: pointer;
+  color: white;
+  width: 24%;
+  height: 30px;
 }
-.btn1 {
-  background-color: rgb(0, 217, 255);
-  color: #fff;
+
+input[type="text"] {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
 }
-.btn2 {
-  background-color: #ddd;
-  color: #333;
+
+#contactus {
+  font-size: large;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
-.btn3 {
-  color: #fff;
-  background-color: dimgray;
+
+#mails {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
-@media only screen and (min-width: 376px) {
-  nav ul li:last-child {
-    display: none;
-  }
+
+#fullname {
+  width: 100%;
+  box-shadow: 2px 2px 2px rgb(223, 219, 219);
+  margin-bottom: 20px;
 }
-@media only screen and (max-width: 655px) {
-  nav ul li a {
-    display: none;
-  }
-  nav ul li:last-child {
-    display: block;
-  }
-  .btns {
-    margin-top: 30px;
-  }
-  .btns button {
-    padding: 10px 10px;
-    border-radius: 2px;
-    border: 0;
-    margin-right: 15px;
-    cursor: pointer;
-    width: 150px;
-  }
-  .btn1 {
-    background-color: rgb(0, 217, 255);
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  .btn2 {
-    background-color: #ddd;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  .btn3 {
-    color: #fff;
-    background-color: dimgray;
-    margin-bottom: 10px;
-  }
+
+#phone,
+#address {
+  width: 49%;
+  box-shadow: 2px 2px 2px rgb(223, 219, 219);
 }
-@media only screen and (max-width: 375px) {
-  nav ul li {
-    align-self: end;
-    margin-top: -30px;
-    margin-left: 30px;
+
+#hotelimage {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  border: none;
+  margin-top: 20px;
+}
+
+#message {
+  width: 99.2%;
+  height: 200px;
+  box-shadow: 2px 2px 2px rgb(223, 219, 219);
+  border: none;
+}
+
+#logo {
+  font-size: 50px;
+  text-transform: capitalize;
+  color: grey;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-top: 0px;
+}
+
+#submit {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .flex-container {
+    flex-wrap: wrap-reverse;
+    width: 100%;
   }
 
-  nav ul li a {
-    display: none;
+  .form {
+    width: 100%;
+    margin-top: 2px;
   }
-  nav ul .nav-item3 {
-    display: none;
+
+  .image {
+    width: 100%;
   }
-  .hero-text {
-    color: #fff;
-  }
-  .hero-text .p1 {
+
+  #logo {
     font-size: 30px;
-    text-transform: uppercase;
+    font-weight: bold;
   }
-  .hero-text .p2 {
-    font-size: 20px;
+
+  .logo {
+    height: 40px;
   }
-  .hero-text form input {
-    padding: 10px;
-    font-size: 17px;
-    border: none;
+}
+
+@media only screen and (max-width: 350px) {
+  #phone,
+  #address {
+    width: 100%;
+    box-shadow: 2px 2px 2px rgb(223, 219, 219);
   }
-  .hero-text form button {
-    margin-left: 1px;
-    padding: 10px 10px;
-    background: #ddd;
-    font-size: 13px;
-    border: none;
-    cursor: pointer;
+
+  #address {
+    margin-bottom: 20px;
   }
-  .hero-text form button:hover {
-    background-color: lightslategray;
+
+  #mails {
+    flex-wrap: wrap;
   }
-  .btns {
-    margin-top: 30px;
+
+  #logo {
+    font-size: 25px;
+    font-weight: bold;
   }
-  .btns button {
-    padding: 10px 10px;
-    border-radius: 2px;
-    border: 0;
-    margin-right: 15px;
-    cursor: pointer;
-    width: 150px;
-  }
-  .btn1 {
-    background-color: rgb(0, 217, 255);
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  .btn2 {
-    background-color: #ddd;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  .btn3 {
-    color: #fff;
-    background-color: dimgray;
-    margin-bottom: 10px;
+
+  .logo {
+    height: 30px;
   }
 }
