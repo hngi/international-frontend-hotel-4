@@ -1,183 +1,366 @@
 /* Rooms and Rate -section */
-.search{
-    margin: 0 2rem;
-    width: 50%;
-  }
-  
-  .search__input{
-    background-color: #f7f7f7f7;
-    padding: 0 4rem;
-    width: 70%;
-  }
-  .flex{
-    display: flex;
-    padding: 2rem 0;
-  }
-  .group-buttons{
-    padding: 0;
-  }
-  .just-btn{
-    /* display: inline-block; */
-    padding: .65rem 2rem;
-    border: none;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: transform 250ms;
-  }
-  
-  .just-btn:hover{
-    transform: scale(1.1) translateY(.5rem);
-    cursor: pointer;
-  }
-  
-  .bg-primary{
-    background-color: rgb(0, 217, 255);
-    color: white;
-  }
-  .bg-dark{
-    background-color: #272626;
-    color: #fff;
-  }
-  .bg-secondary{
-    background-color: #f7f7f7f7;
-    color: #353535;
-  }
-  .bg-dark__deep{
-    background-color: #7a7878;
-    color: #fff;
-  }
-  .rooms__gallery{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 1rem;
-    margin-bottom: 1rem;
-  }
-  .rooms__body{
+.search {
+  margin: 0 2rem;
+  width: 50%;
+}
+
+.search__input {
+  background-color: #f7f7f7f7;
+  padding: 0 4rem;
+  width: 70%;
+}
+
+.flex {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.group-buttons {
+  padding: 0;
+}
+
+.just-btn {
+  /* display: inline-block; */
+  padding: .65rem 2rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: transform 250ms;
+}
+
+.just-btn:hover {
+  transform: scale(1.1) translateY(.5rem);
+  cursor: pointer;
+}
+
+.bg-primary {
+  background-color: rgb(0, 217, 255);
   color: white;
-    padding: 1rem;
-    position: absolute;
-    top: 70%;
-    width: 100%;
-  
+}
+
+.bg-dark {
+  background-color: #272626;
+  color: #fff;
+}
+
+.bg-secondary {
+  background-color: #f7f7f7f7;
+  color: #353535;
+}
+
+.bg-dark__deep {
+  background-color: #7a7878;
+  color: #fff;
+}
+
+.rooms__gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.rooms__body {
+  color: white;
+  padding: 1rem;
+  position: absolute;
+  top: 70%;
+  width: 100%;
+
+}
+
+.rooms__body::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 217, 255, 0.205);
+}
+
+.rooms__body::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgba(25, 28, 29, 0.329);
+  z-index: -1;
+}
+
+.rooms__title {
+  font-size: 1rem;
+}
+
+.rooms__title2 {
+  color: white;
+  font-size: 1rem;
+  padding-left: .5rem;
+}
+
+.rooms__text {
+  font-size: .7rem;
+}
+
+.rooms__button {
+  padding: 0 1rem;
+  border: none;
+  color: white;
+  background-color: rgb(0, 217, 255);
+  transition: background-color 250ms;
+}
+
+.rooms__button2 {
+  padding: 1rem 2rem;
+  border: none;
+  color: white;
+  background-color: rgb(0, 217, 255);
+  transition: background-color 250ms;
+}
+
+.rooms__button:hover,
+.rooms__button2:hover {
+  cursor: pointer;
+  background-color: rgba(0, 217, 255, 0.767);
+}
+
+.col {
+  width: 50%;
+}
+
+.center {
+  width: 100%;
+  text-align: center;
+}
+
+
+@media (max-width: 690px) {
+
+  .row,
+  .flex {
+    flex-flow: column;
+    /* align-items: flex-start; */
   }
-  .rooms__body::after{
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 217, 255, 0.205);
+
+  .rooms__body>.row {
+    flex-flow: row;
   }
-  .rooms__body::before{
-    content: '';
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background-color: rgba(25, 28, 29, 0.329);
-    z-index: -1;
+
+  .row>.rooms__title2 {
+    display: none;
   }
-  .rooms__title{
-    font-size: 1rem;
-  }
-  .rooms__title2{
-    color: white;
-    font-size: 1rem;
-    padding-left: .5rem;
-  }
-  .rooms__text{
-    font-size: .7rem;
-  }
-  .rooms__button{
-    padding: 0 1rem;
-    border: none;
-    color: white;
-    background-color: rgb(0, 217, 255);
-    transition: background-color 250ms;
-  }
-  .rooms__button2{
+
+  .row>.rooms__button {
     padding: 1rem 2rem;
-    border: none;
-    color: white;
-    background-color: rgb(0, 217, 255);
-    transition: background-color 250ms;
+    margin: auto;
   }
-  .rooms__button:hover,
-  .rooms__button2:hover{
-    cursor: pointer;
-    background-color: rgba(0, 217, 255, 0.767);
+
+  .xm-hide {
+    display: none;
   }
-  .col{
+
+  .lg-hide {
+    display: block;
+  }
+
+  .footer__label {
+    display: none;
+  }
+
+  .footer__logo {
     width: 50%;
   }
-  
-  .center {
+
+  .col-4,
+  .col-2 {
     width: 100%;
     text-align: center;
   }
-  
-  
-  @media (max-width: 690px ){
-    .row, .flex {
-      flex-flow: column;
-      /* align-items: flex-start; */
-    }
-    .rooms__body > .row{
-      flex-flow: row;
-    }
-    .row > .rooms__title2{
-      display: none;
-    }
-    .row > .rooms__button{
-      padding: 1rem 2rem;
-      margin: auto;
-    }
-    .xm-hide{
-      display: none;
-    }
-    .lg-hide{
-      display: block;
-    }
-    .footer__label{
-      display: none;
-    }
-    .footer__logo{
-      width: 50%;
-    }
-    .col-4, .col-2{
-      width: 100%;
-      text-align: center;
-    }
-    .social-handles{
-      justify-content: center;
-      flex-flow: row;
-    }
-    
-    .search {
-      width: 100%;
-      margin-bottom: 1rem;
-      text-align: center;
-      padding: 0;
-      margin: 0;
-    }
-    .search__input{
-      width: 100%;
-      margin-bottom: 1rem;
-    }
-    .group-buttons{
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .just-btn{
-      width: 50%;
-      margin-bottom: 1rem;
-    }
-    .just-btn:not(:first-child){
-      margin-bottom: 1rem;
-    }
+
+  .social-handles {
+    justify-content: center;
+    flex-flow: row;
   }
+
+  .search {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .search__input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .group-buttons {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .just-btn {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+
+  .just-btn:not(:first-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+/*Contact-Form Styling*/
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 400;
+  justify-content: space-around;
+}
+
+.form {
+  background-color: white;
+  width: 48%;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.image {
+  background-color: white;
+  width: 48%;
+}
+
+input[type=submit] {
+  background-color: rgb(37, 236, 236);
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  color: white;
+  width: 24%;
+  height: 30px;
+
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+}
+
+#contactus {
+  font-size: large;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+#mails {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#fullname {
+  width: 100%;
+  box-shadow: 2px 2px 2px rgb(223, 219, 219);
+  margin-bottom: 20px;
+}
+
+#phone,
+#address {
+  width: 49%;
+  box-shadow: 2px 2px 2px rgb(223, 219, 219);
+}
+
+#hotelimage {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  border: none;
+  margin-top: 20px;
+}
+
+#message {
+  width: 99.2%;
+  height: 200px;
+  box-shadow: 2px 2px 2px rgb(223, 219, 219);
+  border: none;
+}
+
+#logo {
+  font-size: 50px;
+  text-transform: capitalize;
+  color: grey;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-top: 0px;
+
+
+}
+
+#submit {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .flex-container {
+    flex-wrap: wrap-reverse;
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+    margin-top: 2px;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  #logo {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .logo {
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+
+  #phone,
+  #address {
+    width: 100%;
+    box-shadow: 2px 2px 2px rgb(223, 219, 219);
+  }
+
+  #address {
+    margin-bottom: 20px;
+  }
+
+  #mails {
+    flex-wrap: wrap;
+  }
+
+  #logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .logo {
+    height: 30px;
+  }
+}
